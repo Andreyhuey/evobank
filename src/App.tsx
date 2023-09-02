@@ -1,9 +1,7 @@
-import React from "react";
-
 function App() {
   return (
     <>
-      <div className="min-h-screen bg-slate-600"></div>
+      <div className="min-h-screen bg-[#3A61F0] lg:px-8 md:px-4"></div>
     </>
   );
 }
