@@ -1,10 +1,11 @@
+import { AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
   return (
     <div className="text-white px-8 py-4 h-auto fixed top-0 left-0 z-30 bg-[#3A61F0] w-full">
-      {/* Navbar for tabs and pcs completed */}
-      <div className="flex items-center justify-between relative">
+      {/* Navbar for tabs and pcs*/}
+      <div className="md:flex items-center justify-between relative hidden">
         <div className="h3">EVO</div>
         <ul
           className="flex items-center justify-between gap-3 absolute top-1/2 left-1/2 
@@ -74,6 +75,14 @@ const Navbar = () => {
         <div className="button">CREATE ACCOUNT</div>
       </div>
       {/*  */}
+
+      {/* Navbar for mobile phones */}
+      <div className="md:hidden flex justify-between items-center">
+        <div className="h3">EVO</div>
+        <div className="">
+          <AiOutlineMenu className="w-[40px] h-[40px]" />
+        </div>
+      </div>
     </div>
   );
 };
