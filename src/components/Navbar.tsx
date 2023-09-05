@@ -23,18 +23,29 @@ const Navbar = () => {
     <div className="text-white  py-4 h-auto fixed top-0 left-0 z-30 bg-[#3A61F0] w-full">
       {/* Navbar for tabs and pcs*/}
       <div className="md:flex items-center px-8 justify-between relative hidden">
-        <div className="h3">EVO</div>
+        <div className="h3">
+          <Link
+            to="home"
+            activeClass="active"
+            smooth={true}
+            spy={true}
+            offset={-100}
+            className="cursor-pointer"
+          >
+            EVO
+          </Link>
+        </div>
         <ul
           className="flex items-center justify-between gap-3 absolute top-1/2 left-1/2 
           transform -translate-x-1/2 -translate-y-1/2"
         >
           <li>
             <Link
-              to="home"
+              to="services"
               activeClass="active"
               smooth={true}
               spy={true}
-              offset={-200}
+              offset={-75}
               className="cursor-pointer w-[60px] h-[60px]  flex items-center justify-center"
             >
               Services
@@ -46,7 +57,7 @@ const Navbar = () => {
               activeClass="active"
               smooth={true}
               spy={true}
-              offset={-200}
+              offset={-75}
               className="cursor-pointer w-[60px] h-[60px]  flex items-center justify-center"
             >
               About
@@ -58,7 +69,7 @@ const Navbar = () => {
               activeClass="active"
               smooth={true}
               spy={true}
-              offset={-200}
+              offset={-75}
               className="cursor-pointer w-[60px] h-[60px]  flex items-center justify-center"
             >
               F.A.Q
@@ -70,7 +81,7 @@ const Navbar = () => {
               activeClass="active"
               smooth={true}
               spy={true}
-              offset={-200}
+              offset={-75}
               className="cursor-pointer w-[60px] h-[60px]  flex items-center justify-center"
             >
               Stories
@@ -82,7 +93,7 @@ const Navbar = () => {
               activeClass="active"
               smooth={true}
               spy={true}
-              offset={-200}
+              offset={-75}
               className="cursor-pointer w-[60px] h-[60px]  flex items-center justify-center"
             >
               Insights
@@ -95,43 +106,105 @@ const Navbar = () => {
 
       {/* Navbar for mobile phones */}
       <div className="md:hidden flex px-8 justify-between items-center">
-        <div className={`h3 ${nav ? "hidden" : ""}`}>EVO</div>
+        <div className={`h3 ${nav ? "text-transparent" : ""}`}>EVO</div>
         <div className="" onClick={handleNav}>
           {!nav ? (
-            <AiOutlineMenu className="w-[40px] h-[40px]" />
+            <AiOutlineMenu className="w-[30px] h-[30px]" />
           ) : (
-            <IoCloseCircleOutline className="text-[26px] fixed right-0" />
+            <div className="flex justify-end items-end">
+              <IoCloseCircleOutline className="flex justify-end text-[30px]" />
+            </div>
           )}
         </div>
       </div>
 
       <div className="w-full">
         <ul
-          className={
+          className={`
+
+          ${
             !nav
               ? "hidden"
-              : "absolute h-screen w-full bg-opacity-95 bg-[#3A61F0] transform transition-transform duration-300 ease-in-out"
-          }
+              : "absolute h-screen w-full bg-opacity-95 bg-[#3A61F0]"
+          }          
+          `}
         >
           <div className="flex flex-col items-center justify-center pt-10 gap-16 w-full">
-            <li onClick={handleNav}>
-              <Link
-                to="home"
-                activeClass="active"
-                smooth={true}
-                spy={true}
-                offset={-200}
-              ></Link>
-            </li>
             <li>
               <Link
                 to="home"
                 activeClass="active"
                 smooth={true}
                 spy={true}
-                offset={-200}
-              ></Link>
+                offset={-100}
+                onClick={handleNav}
+              >
+                Home
+              </Link>
             </li>
+            <li>
+              <Link
+                to="services"
+                activeClass="active"
+                smooth={true}
+                spy={true}
+                offset={-50}
+                onClick={handleNav}
+              >
+                Services
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="about"
+                activeClass="active"
+                smooth={true}
+                spy={true}
+                offset={-50}
+                onClick={handleNav}
+              >
+                About
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="FAQ"
+                activeClass="active"
+                smooth={true}
+                spy={true}
+                offset={-50}
+                onClick={handleNav}
+              >
+                F.A.Q
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="stories"
+                activeClass="active"
+                smooth={true}
+                spy={true}
+                offset={-50}
+                onClick={handleNav}
+              >
+                Stories
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="insights"
+                activeClass="active"
+                smooth={true}
+                spy={true}
+                offset={-50}
+                onClick={handleNav}
+              >
+                Insights
+              </Link>
+            </li>
+            <div className="button" onClick={handleNav}>
+              CREATE ACCOUNT
+            </div>
           </div>
         </ul>
       </div>
