@@ -4,7 +4,7 @@
 
 @layer base {
   .h1 {
-    @apply text-[72px] font-bold leading-10;
+    @apply md:text-[72px] text-[50px] font-bold md:leading-[80px] leading-[60px] text-white;
   }
   .h2 {
     @apply text-[56px] font-bold leading-9;
