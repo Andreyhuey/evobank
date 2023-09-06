@@ -36,7 +36,7 @@ const Navbar = () => {
           </Link>
         </div>
         <ul
-          className="flex items-center justify-between gap-3 absolute top-1/2 left-1/2 
+          className="flex items-center justify-between md:gap-4 lg:gap-10 absolute top-1/2 left-1/2 
           transform -translate-x-1/2 -translate-y-1/2"
         >
           <li>
@@ -72,7 +72,7 @@ const Navbar = () => {
               offset={-75}
               className="cursor-pointer w-[60px] h-[60px]  flex items-center justify-center"
             >
-              F.A.Q
+              F.A.Q.
             </Link>
           </li>
           <li>
@@ -105,7 +105,7 @@ const Navbar = () => {
       {/*  */}
 
       {/* Navbar for mobile phones */}
-      <div className="md:hidden flex px-8 justify-between items-center">
+      <div className="md:hidden flex px-6 justify-between items-center">
         <div className={`h3 ${nav ? "text-transparent" : ""}`}>EVO</div>
         <div className="" onClick={handleNav}>
           {!nav ? (
@@ -175,7 +175,7 @@ const Navbar = () => {
                 offset={-50}
                 onClick={handleNav}
               >
-                F.A.Q
+                F.A.Q.
               </Link>
             </li>
             <li>
