@@ -106,9 +106,18 @@ const Navbar = () => {
 
       {/* Navbar for mobile phones */}
       <div className="md:hidden flex px-4 justify-between items-center">
-        <div className={`h3 text-white ${nav ? "text-transparent" : ""}`}>
+        <Link
+          to={nav ? "" : "home"}
+          activeClass="active"
+          smooth={true}
+          spy={true}
+          offset={-100}
+          className={`h3  ${
+            nav ? "text-transparent" : "text-white cursor-pointer"
+          }`}
+        >
           EVO
-        </div>
+        </Link>
         <div className="" onClick={handleNav}>
           {!nav ? (
             <AiOutlineMenu className="w-[30px] h-[30px]" />
