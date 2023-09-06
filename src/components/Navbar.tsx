@@ -20,7 +20,7 @@ const Navbar = () => {
   }, [nav]);
 
   return (
-    <div className="text-white  py-4 h-auto fixed top-0 left-0 z-30 bg-[#3A61F0] w-full">
+    <div className="text-white  pb-3 pt-4 h-auto fixed top-0 left-0 z-30 bg-[#3A61F0] w-full">
       {/* Navbar for tabs and pcs*/}
       <div className="md:flex items-center px-8 justify-between relative hidden">
         <div className="h3">
@@ -105,8 +105,10 @@ const Navbar = () => {
       {/*  */}
 
       {/* Navbar for mobile phones */}
-      <div className="md:hidden flex px-6 justify-between items-center">
-        <div className={`h3 ${nav ? "text-transparent" : ""}`}>EVO</div>
+      <div className="md:hidden flex px-4 justify-between items-center">
+        <div className={`h3 text-white ${nav ? "text-transparent" : ""}`}>
+          EVO
+        </div>
         <div className="" onClick={handleNav}>
           {!nav ? (
             <AiOutlineMenu className="w-[30px] h-[30px]" />
@@ -129,7 +131,7 @@ const Navbar = () => {
           }          
           `}
         >
-          <div className="flex flex-col items-center justify-center pt-10 gap-16 w-full">
+          <div className="flex flex-col items-center justify-center pt-10 gap-14 w-full">
             <li>
               <Link
                 to="home"

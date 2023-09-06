@@ -7,10 +7,10 @@
     @apply md:text-[72px] text-[50px] font-bold md:leading-[80px] leading-[60px] text-white;
   }
   .h2 {
-    @apply text-[56px] font-bold leading-9;
+    @apply md:text-[56px] text-[40px] text-[#333333] font-bold leading-9;
   }
   .h3 {
-    @apply text-[40px] font-bold leading-8;
+    @apply md:text-[40px] text-[24px] text-[#333333] font-bold leading-8;
   }
   .h4 {
     @apply text-[24px] font-bold leading-7;
