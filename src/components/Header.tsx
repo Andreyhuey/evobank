@@ -16,7 +16,7 @@ const Header = () => {
         <div className="order-2 lg:order-1">
           <div className="flex flex-col gap-8">
             <div>
-              <div className="border-[#F5A647] border-[1px] text-[#F5A647] border-dashed p-2 inline-block rounded-3xl tracking-[3px]">
+              <div className="border-[#F5A647] border-[1px] text-[#F5A647] border-dashed p-2 inline-block rounded-3xl tracking-[3px] hover:scale-110 transition duration-300 ease-in-out cursor-pointer">
                 BANKING
               </div>
             </div>
@@ -26,7 +26,7 @@ const Header = () => {
               was indeed sublime.
             </p>
             <div>
-              <button className="bg-[#F5A647] rounded-3xl px-6 py-2">
+              <button className="bg-[#F5A647] rounded-3xl px-6 py-2 hover:scale-110 transition duration-300 ease-in-out">
                 Explore Services
               </button>
             </div>
