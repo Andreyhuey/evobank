@@ -8,6 +8,9 @@ import Insights from "./Insights";
 import Navbar from "./Navbar";
 import Services from "./Services";
 import Stories from "./Stories";
+import MultiComponent from "./MultiComponent";
+import Newsletter from "./Newsletter";
+import Testimonials from "./Testimonials";
 
 export {
   About,
@@ -17,7 +20,10 @@ export {
   Footer,
   Header,
   Insights,
+  MultiComponent,
   Navbar,
   Services,
   Stories,
+  Newsletter,
+  Testimonials,
 };

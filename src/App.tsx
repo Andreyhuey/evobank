@@ -1,4 +1,12 @@
-import { Banner, CreditCard, Header, Navbar, Services } from "./components";
+import {
+  CreditCard,
+  Header,
+  Navbar,
+  Services,
+  MultiComponent,
+  Footer,
+  Banner,
+} from "./components";
 
 function App() {
   return (
@@ -8,7 +16,9 @@ function App() {
         <Header />
         <Services />
         <CreditCard />
-        {/* <Banner /> */}
+        <MultiComponent />
+        <Banner />
+        <Footer />
       </div>
     </>
   );
