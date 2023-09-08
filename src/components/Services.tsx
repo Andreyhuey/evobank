@@ -11,7 +11,7 @@ const Services = () => {
   };
 
   return (
-    <div className="rounded-3xl bg-white md:pt-24 pt-14 pb-8">
+    <div className="rounded-3xl bg-white md:pt-24 pt-14 pb-8 w-full">
       {/* Features */}
       <div className="pb-14 md:px-20 px-4">
         <div className="flex flex-col gap-8">

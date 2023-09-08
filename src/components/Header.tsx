@@ -10,7 +10,7 @@ import { Link } from "react-scroll";
 const Header = () => {
   return (
     <div
-      className="rounded-3xl bg-[#181C33] md:py-24 py-8 mt-[80px] md:px-20 px-4"
+      className="rounded-3xl bg-[#181C33] md:py-24 py-8 mt-[80px] md:px-20 px-4 w-full"
       id="home"
     >
       <div className="flex flex-col lg:flex-row  justify-between gap-10 items-center text-white">
