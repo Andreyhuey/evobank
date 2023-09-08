@@ -11,6 +11,7 @@ import Stories from "./Stories";
 import MultiComponent from "./MultiComponent";
 import Newsletter from "./Newsletter";
 import Testimonials from "./Testimonials";
+import Features from "./Features";
 
 export {
   About,
@@ -18,6 +19,7 @@ export {
   CreditCard,
   FAQs,
   Footer,
+  Features,
   Header,
   Insights,
   MultiComponent,

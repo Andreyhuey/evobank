@@ -1,9 +1,7 @@
-import React from "react";
-
 const Footer = () => {
   return (
-    <div>
-      <></>
+    <div className="min-h-[50vh] text-center h1">
+      <>Footer</>
     </div>
   );
 };
