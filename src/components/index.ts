@@ -1,5 +1,6 @@
 import About from "./About";
 import Banner from "./Banner";
+import CreditCard from "./CreditCard";
 import FAQs from "./FAQs";
 import Footer from "./Footer";
 import Header from "./Header";
@@ -11,6 +12,7 @@ import Stories from "./Stories";
 export {
   About,
   Banner,
+  CreditCard,
   FAQs,
   Footer,
   Header,
