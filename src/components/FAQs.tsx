@@ -1,9 +1,7 @@
-import React from "react";
-
 const FAQs = () => {
   return (
-    <div>
-      <></>
+    <div id="FAQ">
+      <>FAQ</>
     </div>
   );
 };

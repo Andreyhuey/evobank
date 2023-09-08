@@ -1,7 +1,7 @@
 const Testimonials = () => {
   return (
-    <div>
-      <></>
+    <div id="stories">
+      <>stories</>
     </div>
   );
 };
