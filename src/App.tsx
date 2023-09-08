@@ -1,4 +1,4 @@
-import { Banner, Header, Navbar, Services } from "./components";
+import { Banner, CreditCard, Header, Navbar, Services } from "./components";
 
 function App() {
   return (
@@ -7,7 +7,8 @@ function App() {
         <Navbar />
         <Header />
         <Services />
-        <Banner />
+        <CreditCard />
+        {/* <Banner /> */}
       </div>
     </>
   );
