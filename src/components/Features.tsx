@@ -1,3 +1,5 @@
+// images
+
 import Feature1 from "../assets/Feature1.png";
 import Feature2 from "../assets/Feature2.png";
 import Feature3 from "../assets/Feature3.png";
