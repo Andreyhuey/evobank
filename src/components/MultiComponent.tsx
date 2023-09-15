@@ -1,4 +1,4 @@
-import { About, FAQs, Insights, Newsletter, Testimonials } from ".";
+import { About, FAQs, Insights, Testimonials } from ".";
 
 const MultiComponent = () => {
   return (
@@ -8,7 +8,6 @@ const MultiComponent = () => {
       <FAQs />
       <Testimonials />
       <Insights />
-      <Newsletter />
     </div>
   );
 };
