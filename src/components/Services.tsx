@@ -26,7 +26,10 @@ const Services = () => {
           </p>
           <div className="relative bg-white pb-5">
             <div className="rounded-2xl inline-block w-full absolute bottom-[-30px]">
-              <div className="flex flex-row items-center justify-center">
+              <div
+                className="flex flex-row items-center justify-center"
+                id="loans"
+              >
                 <a
                   href="#overview"
                   className={`${

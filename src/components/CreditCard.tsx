@@ -3,7 +3,10 @@ import credit1 from "../assets/credit-card.png";
 
 const CreditCard = () => {
   return (
-    <div className="rounded-3xl bg-[#181C33] lg:py-12 py-14 md:px-20 px-4 w-full ">
+    <div
+      className="rounded-3xl bg-[#181C33] lg:py-12 py-14 md:px-20 px-4 w-full "
+      id="credit"
+    >
       <div className="flex flex-col lg:flex-row gap-5 text-white items-center justify-between">
         <div className="flex flex-col gap-8">
           <div>

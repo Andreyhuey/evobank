@@ -56,7 +56,7 @@ const Footer = () => {
           <p className="h5 text-[#F5A647]">SERVICE</p>
           <div className="flex flex-col gap-3 pt-5">
             <Link
-              to="about"
+              to="loans"
               activeClass="active"
               smooth={true}
               spy={true}
@@ -67,7 +67,7 @@ const Footer = () => {
             </Link>
 
             <Link
-              to="stories"
+              to="credit"
               activeClass="active"
               smooth={true}
               spy={true}
@@ -77,7 +77,7 @@ const Footer = () => {
               Credit Card
             </Link>
             <Link
-              to="insights"
+              to="home"
               activeClass="active"
               smooth={true}
               spy={true}
