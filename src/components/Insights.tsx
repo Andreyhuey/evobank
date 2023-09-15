@@ -1,3 +1,4 @@
+import { Newsletter } from ".";
 import insight1 from "../assets/insight1.png";
 import insight2 from "../assets/insight12.png";
 import insight3 from "../assets/insight12.png";
@@ -76,6 +77,9 @@ const Insights = () => {
             </div>
           </div>
         </div>
+
+        {/* Newsletter */}
+        <Newsletter />
       </div>
     </div>
   );
