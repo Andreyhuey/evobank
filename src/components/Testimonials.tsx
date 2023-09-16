@@ -1,31 +1,33 @@
-// import styled from "styled-components";
-// import { TestimonialData } from "../constants";
-// import { Stories } from ".";
+import styled from "styled-components";
+import { TestimonialData } from "../constants";
+import { Stories } from ".";
+import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 
-// const Main = styled.div`
-//   overflow-x: scroll;
-//   scroll-behavior: smooth;
+const Main = styled.div`
+  overflow-x: scroll;
+  scroll-behavior: smooth;
 
-//   &::-webkit-scrollbar {
-//     display: none;
-//   }
-// `;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+`;
 
 const Testimonials = () => {
-  // const slideLeft = () => {
-  //   const slider = document.getElementById("slider");
-  //   if (slider === null) {
-  //     return "";
-  //   }
-  //   slider.scrollLeft = slider.scrollLeft - 950;
-  // };
-  // const slideRight = () => {
-  //   const slider = document.getElementById("slider");
-  //   if (slider === null) {
-  //     return "";
-  //   }
-  //   slider.scrollLeft = slider.scrollLeft + 950;
-  // };
+  const slideLeft = () => {
+    const slider = document.getElementById("slider");
+    if (slider === null) {
+      return "";
+    }
+    slider.scrollLeft = slider.scrollLeft - 600;
+  };
+  const slideRight = () => {
+    const slider = document.getElementById("slider");
+    if (slider === null) {
+      return "";
+    }
+    slider.scrollLeft = slider.scrollLeft + 600;
+  };
+
   return (
     <div id="stories" className="px-6 md:px-20 py-10 ">
       <>
@@ -41,15 +43,33 @@ const Testimonials = () => {
           <p>Cloudless and of a deep dark blue spectacle before us was.</p>
         </div>
       </>
-      <main className="py-4 ">
-        <div className="flex items-center gap-x-10 lg:gap-x-12 min-w-fit">
-          {/* {TestimonialData?.map((item, index) => (
+
+      <Main id="slider" className="w-[100%] py-10">
+        <div className="flex items-center gap-x-8 lg:gap-x-10 ">
+          {TestimonialData?.map((item, index) => (
             <>
-              <Stories key={index} index={index} />
+              <Stories item={item} key={index} index={index} />
             </>
-          ))} */}
+          ))}
         </div>
-      </main>
+      </Main>
+
+      <div className="flex justify-center pt-7 items-center">
+        <div className="flex items-center justify-center gap-4">
+          <span onClick={slideLeft}>
+            <BsArrowLeftCircle
+              size={32}
+              className="text-[#3A61F0] cursor-pointer hover:scale-110 transition duration-300 ease-in-out"
+            />
+          </span>
+          <span onClick={slideRight}>
+            <BsArrowRightCircle
+              size={32}
+              className="text-[#3A61F0] cursor-pointer hover:scale-110 transition duration-300 ease-in-out"
+            />
+          </span>
+        </div>
+      </div>
     </div>
   );
 };

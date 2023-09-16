@@ -25,13 +25,13 @@ interface Prop {
   };
 }
 
-const Stories = ({ item }: Prop) => {
-  const { id, name, displayPicture, story, stars } = item;
+const Stories = ({ item, index }: Prop) => {
+  const { name, displayPicture, story, stars } = item;
 
   return (
     <div
       className="rounded-3xl p-6 flex flex-col gap-4 min-w-[300px] min-h-[250px] shadow-xl relative hover:bg-[#0F0901] hover:text-white transition duration-300 ease-in-out  cursor-pointer"
-      key={id}
+      key={index}
     >
       <div>
         <IconRenderer numberOfIcons={stars} />
