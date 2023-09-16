@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pb-14 items-start justify-center lg:justify-between gap-y-10 w-full text-center md:text-start">
         <div className="h2 text-white">EVO</div>
         <div>
-          <p className="h5 text-[#F5A647]">MENU</p>
+          <p className="h5 text-[#F5A647] tracking-[3px]">MENU</p>
           <div className="flex flex-col gap-3 pt-5">
             <Link
               to="about"
@@ -53,7 +53,7 @@ const Footer = () => {
         </div>
         {/*  */}
         <div>
-          <p className="h5 text-[#F5A647]">SERVICE</p>
+          <p className="h5 text-[#F5A647] tracking-[3px]">SERVICE</p>
           <div className="flex flex-col gap-3 pt-5">
             <Link
               to="loans"
