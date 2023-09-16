@@ -14,46 +14,46 @@ export const TestimonialData = [
     displayPicture: jordan,
     stars: 5,
   },
-  // {
-  //   id: 1,
-  //   name: "Cameron Rogers",
-  //   story:
-  //     "Banks may also provide financial services such as wealth management, currency exchange, and safe deposit boxes.",
-  //   displayPicture: cameron,
-  //   stars: 5,
-  // },
-  // {
-  //   id: 2,
-  //   name: "Harinder Mondi",
-  //   story:
-  //     "There are several different kinds of banks including retail banks, commercial or corporate banks, and investment banks.",
-  //   displayPicture: harinder,
-  //   stars: 5,
-  // },
-  // {
-  //   id: 3,
-  //   name: "Jason Bailey",
-  //   story:
-  //     "Banking is defined as the business activity of accepting and safeguarding money owned by other individuals.",
-  //   displayPicture: jason,
-  //   stars: 5,
-  // },
-  // {
-  //   id: 4,
-  //   name: "Jose Esteve",
-  //   story:
-  //     "Accepting and safeguarding money owned by other individuals and entities, and then lending out this money in order to conduct economic.",
-  //   displayPicture: jose,
-  //   stars: 5,
-  // },
-  // {
-  //   id: 5,
-  //   name: "Salma Fonseca",
-  //   story:
-  //     "Money in order to conduct economic activities such as making profit or simply covering operating expenses.",
-  //   displayPicture: salma,
-  //   stars: 5,
-  // },
+  {
+    id: 1,
+    name: "Cameron Rogers",
+    story:
+      "Banks may also provide financial services such as wealth management, currency exchange, and safe deposit boxes.",
+    displayPicture: cameron,
+    stars: 4,
+  },
+  {
+    id: 2,
+    name: "Harinder Mondi",
+    story:
+      "There are several different kinds of banks including retail banks, commercial or corporate banks, and investment banks.",
+    displayPicture: harinder,
+    stars: 5,
+  },
+  {
+    id: 3,
+    name: "Jason Bailey",
+    story:
+      "Banking is defined as the business activity of accepting and safeguarding money owned by other individuals.",
+    displayPicture: jason,
+    stars: 4,
+  },
+  {
+    id: 4,
+    name: "Jose Esteve",
+    story:
+      "Accepting and safeguarding money owned by other individuals and entities, and then lending out this money in order to conduct economic.",
+    displayPicture: jose,
+    stars: 3,
+  },
+  {
+    id: 5,
+    name: "Salma Fonseca",
+    story:
+      "Money in order to conduct economic activities such as making profit or simply covering operating expenses.",
+    displayPicture: salma,
+    stars: 5,
+  },
 ];
 
 export const faqData = [
