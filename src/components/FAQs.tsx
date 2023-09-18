@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { AiOutlineDownCircle } from "react-icons/ai";
 import {
   Accordion,
@@ -11,8 +10,6 @@ import "react-accessible-accordion/dist/fancy-example.css";
 import { faqData } from "../constants";
 
 const FAQs = () => {
-  const [expandedItem, setExpandedItem] = useState(0);
-
   return (
     <div id="FAQ" className="md:px-6 py-10">
       <div className="flex flex-col gap-4 items-center justify-center px-6 md:px-14 py-10">
@@ -30,15 +27,12 @@ const FAQs = () => {
         <>
           {faqData?.map((item, index) => {
             // destructure service
-            const { id, heading, details } = item;
+            const { heading, details } = item;
             return (
               <div key={index} className="flex flex-col items-center">
                 <Accordion
                   allowZeroExpanded={true}
                   className="flex flex-col gap-4 justify-center md:w-[600px] w-full"
-                  onChange={() => {
-                    console.log(id), setExpandedItem(id);
-                  }}
                 >
                   <AccordionItem className="border-b-[1px] py-3 border-[#F3E5D4]">
                     <AccordionItemHeading>
