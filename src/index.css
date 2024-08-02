@@ -2,7 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --max-width: 1200px;
+  --extra-width: calc(100% - var(--max-width));
+  --full-bleed: calc(var(--extra-width) / 2);
+}
+
 @layer base {
+  .full-bleed {
+    @apply px-[--full-bleed];
+  }
+  .container {
+    @apply md:px-8 lg:px-20 xl:full-bleed mx-auto;
+  }
   .h1 {
     @apply md:text-[72px] text-[50px] font-bold md:leading-[80px] leading-[60px] text-white;
   }
