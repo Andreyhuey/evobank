@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <div className="text-white  pb-3 pt-4 h-auto fixed top-0 left-0 z-30 bg-[#3A61F0] w-full">
       {/* Navbar for tabs and pcs*/}
-      <div className="md:flex items-center px-8 justify-between relative hidden">
+      <div className="md:flex items-center container justify-between relative hidden">
         <div className="h3 text-white">
           <Link
             to="home"
@@ -105,7 +105,7 @@ const Navbar = () => {
       {/*  */}
 
       {/* Navbar for mobile phones */}
-      <div className="md:hidden flex px-4 justify-between items-center">
+      <div className="md:hidden flex container px-4 justify-between items-center">
         <Link
           to={nav ? "" : "home"}
           activeClass="active"
