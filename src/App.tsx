@@ -11,7 +11,7 @@ import {
 function App() {
   return (
     <>
-      <div className="bg-[#3A61F0] lg:px-6 md:px-3 flex flex-col gap-6 relative overflow-hidden">
+      <div className="bg-[#3A61F0] flex flex-col gap-6">
         <Navbar />
         <Header />
         <Services />
