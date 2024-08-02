@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
-    <div className="md:py-10 py-8 md:px-20 px-4 text-white w-full">
+    <div className="md:py-10 py-8 container text-white">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pb-14 items-start justify-center lg:justify-between gap-y-10 w-full text-center md:text-start">
         <div className="h2 text-white">EVO</div>
         <div>

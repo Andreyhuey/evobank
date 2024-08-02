@@ -6,7 +6,7 @@ import Feature3 from "../assets/Feature3.png";
 
 const Features = () => {
   return (
-    <div className="pb-14 md:px-20 px-4">
+    <div className="py-14 rounded-3xl bg-white px-4 container">
       <div className="flex flex-col gap-8">
         <div>
           <div className="border-[#3A61F0] border-[1px] text-[#3A61F0] border-dashed p-2 font-semibold inline-block rounded-3xl tracking-[3px] uppercase hover:scale-110 transition duration-300 ease-in-out  cursor-pointer">
